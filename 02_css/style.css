@@ -1,0 +1,11 @@
+/*주석 쓰기*/
+
+@import url("./heading-style.css");
+p {
+  color: azure;
+  background-color: black;
+}
+span {
+  color: aqua;
+  background-color: cornflowerblue;
+}
