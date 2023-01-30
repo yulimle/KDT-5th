@@ -1,0 +1,4 @@
+.orange ~ li {
+  color: red;
+}
+/* 모든 형제 */

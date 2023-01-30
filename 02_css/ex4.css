@@ -1,0 +1,9 @@
+h1:hover {
+  color: red;
+}
+a:active {
+  background-color: blue;
+}
+#back:focus {
+  background-color: orange;
+}

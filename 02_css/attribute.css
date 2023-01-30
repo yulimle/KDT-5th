@@ -1,0 +1,6 @@
+[disabled] {
+  background-color: red;
+}
+[type="password"] {
+  background-color: orange;
+}

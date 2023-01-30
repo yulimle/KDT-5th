@@ -1,0 +1,10 @@
+a:hover {
+  color: red;
+}
+/*일종의 일치 선택자임*/
+a:active {
+  background-color: orange;
+}
+input:focus {
+  background-color: orange;
+} /*input에 사용 많이 함*/

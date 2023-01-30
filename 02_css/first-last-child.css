@@ -1,0 +1,14 @@
+/*.fruits span:first-child {
+  color: red;
+} /*클래스가 fruits 인 요소들 중에서 첫번째 자식이면서 span 태그일때*/
+/*.fruits h3:last-child {
+  color: blue;
+}*/
+/*마지막 자식이면서 h3일때*/
+.fruits *:nth-child(2n + 1) {
+  color: red;
+}
+/*n은 0부터*/
+.fruits *:not(span) {
+  color: orange;
+}
