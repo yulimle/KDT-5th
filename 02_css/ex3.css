@@ -1,22 +1,43 @@
-p.lion {
+/* p.lion {
   background-color: red;
 } /*자식 선택자 띄어쓰기 안됨*/
-.zoo > ul > .lion {
+/* .zoo > ul > .lion {
   background-color: green;
-} /*구체적으로 써주는게 좋음*/
-#tiger {
+} 구체적으로 써주는게 좋음 */
+/* #tiger {
   background-color: yellow;
 } /*하나만 있을 때*/
-.lion {
+/* .lion {
   color: white;
 } /*기본 선택자*/
+/* .zoo .lion {
+  font-weight: 700;
+} 구체적으로 */
+/* #tiger + li {
+  background-color: skyblue;
+}
+.zoo > ul > .lion ~ li {
+  background-color: orange;
+} */
+
+p.lion {
+  background-color: red;
+}
+.zoo > ul > .lion {
+  background-color: green;
+}
+#tiger {
+  background-color: yellow;
+}
+.lion {
+  color: white;
+}
 .zoo .lion {
   font-weight: 700;
-} /*구체적으로 */
+}
 #tiger + li {
   background-color: skyblue;
 }
 .zoo > ul > .lion ~ li {
   background-color: orange;
 }
-/*구체적으로*/

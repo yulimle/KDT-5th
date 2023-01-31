@@ -1,4 +1,4 @@
-.zoo *:nth-child(2n) {
+/* .zoo *:nth-child(2n) {
   background-color: orange;
 }
 .zoo p:first-child {
@@ -14,5 +14,24 @@
   background-color: yellow;
 }
 .zoo p:nth-child(3) {
+  background-color: blue;
+} */
+
+.zoo *:nth-child(2n) {
+  background-color: orange;
+}
+.zoo *:not(.predator) {
+  background-color: green;
+}
+.zoo *:last-child {
+  background-color: red;
+}
+.zoo *:last-child:hover {
+  background-color: yellow;
+}
+.zoo *:first-child {
+  background-color: purple;
+}
+.zoo *:nth-child(3) {
   background-color: blue;
 }
