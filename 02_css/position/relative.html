@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 400px;
+        height: 300px;
+        background-color: dodgerblue;
+      }
+      .child1 {
+        width: 150px;
+        height: 100px;
+        background-color: yellow;
+      }
+      .child2 {
+        position: relative; /* display, position 등은 상단에 작성
+        relative 는 이동의 기준이 자기 자신이고 원래 자리 빈공간 차지함*/
+        right: 30px; /*오른쪽 변에서 민다*/
+        bottom: 30px; /*아래쪽 변에서 위로 민다*/
+        width: 200px;
+        height: 150px;
+        background-color: orange;
+      }
+      .child3 {
+        width: 150px;
+        height: 200px;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+    </div>
+  </body>
+</html>

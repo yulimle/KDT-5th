@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        display: flex;
+        list-style: none;
+        height: 60px;
+        padding-left: 0px;
+        border-radius: 15px;
+
+        background-color: rgba(128, 128, 128, 0.781);
+
+        align-items: center;
+        font-weight: 700;
+        /*min-width: 300px;*/
+        cursor: pointer;
+      }
+      li {
+        flex-basis: 100px; /*min-width로 할 수 없는 작업들 할 수있음*/
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 0; /*flex-basis가 깨지지 않도록 */
+        color: #eee;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="menu1">메뉴1</li>
+      <li class="menu2">메뉴2</li>
+      <li class="menu3">메뉴3</li>
+      <li class="menu4">메뉴4</li>
+    </ul>
+  </body>
+</html>
