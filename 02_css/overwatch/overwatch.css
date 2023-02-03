@@ -10,11 +10,9 @@ body {
 .container .heros {
   display: flex; /*아이템을 가진 부모 요소에게 flex*/
   flex-wrap: wrap;
-  align-content: center;
   justify-content: center;
-
+  align-content: center;
   max-width: 700px;
-
   padding: 40px 20px;
   margin: auto;
 }
