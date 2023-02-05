@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+}
+
+.navbar .navbar__logo {
+  font-size: 24px;
+  color: white;
+}
+.navbar .navbar__logo i {
+  color: orange;
+}
+
+.navbar .navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar .navbar__menu li {
+  padding: 8px 12px;
+}
+
+.navbar .navbar__icons {
+  display: flex;
+  color: white;
+  list-style: none;
+}
+.navbar .navbar__icons li {
+  padding: 8px 12px;
+}
