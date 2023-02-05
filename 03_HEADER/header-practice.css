@@ -1,0 +1,66 @@
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent);
+}
+
+header .inner {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+}
+header .inner:hover {
+  background-color: white;
+  color: black;
+}
+
+/* 로고 */
+header .inner .header__logo {
+  font-size: 30px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+header .inner .header__logo a {
+}
+
+/* 메뉴 */
+header .inner .header__menu {
+  font-size: 13px;
+  display: flex;
+}
+header .inner .header__menu li {
+  list-style: none;
+  padding: 0px 80px 0px 0px;
+}
+header .inner .header__menu li a {
+}
+
+/* 유틸 */
+header .inner .header__util {
+  font-size: 13px;
+  display: flex;
+}
+header .inner .header__util li {
+  padding: 4px 8px;
+}
+header .inner .header__util li a {
+}
+header .inner .header__util li a i {
+}
+
+/* 로그인, 회원가입 */
+header .inner .header__login-language {
+  display: flex;
+  box-sizing: border-box;
+}
+header .inner .header__login-language .btn.btn--login {
+  padding: 4px;
+}
+header .inner .header__login-language .btn.btn--language {
+  padding: 4px;
+}
