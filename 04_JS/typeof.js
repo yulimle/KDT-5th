@@ -10,3 +10,6 @@ let obj = {
 console.log(typeof num);
 console.log(typeof str);
 console.log(typeof nul);
+console.log(typeof bool);
+console.log(typeof undef);
+console.log(typeof arr);

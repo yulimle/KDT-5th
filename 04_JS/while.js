@@ -25,7 +25,7 @@ while (i < 10) {
 //   }
 // }
 
-//do-while 비교
+// do-while 비교
 // let index1 = 0;
 // do {
 //   console.log(`인덱스는 ${index1} 입니다.`);

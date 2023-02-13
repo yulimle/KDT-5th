@@ -1,39 +1,39 @@
-// function helloFunc() {
-//   console.log("hello");
-// }
+function helloFunc() {
+  console.log("hello");
+}
 
-// function returnFunc() {
-//   console.log("Return");
-//   return "return";
-// }
+function returnFunc() {
+  console.log("Return");
+  return "return";
+}
 
-// let str = helloFunc(); //남긴것이 없음 undefined가 뜬다
-// console.log(str);
+let str = helloFunc(); //남긴것이 없음 undefined가 뜬다
+console.log(str);
 
-// //익명함수
-// let noNameFunc = function () {
-//   console.log("No Name");
-//   return "no name";
-// };
-// noNameFunc();
-// let str2 = noNameFunc();
-// console.log(str2);
+//익명함수
+let noNameFunc = function () {
+  console.log("No Name");
+  return "no name";
+};
+noNameFunc();
+let str2 = noNameFunc();
+console.log(str2);
 
-// function sayHello(name = "friend") {
-//   console.log(`Hello~ ${name}`);
-// }
-// sayHello();
-// sayHello("mike");
+function sayHello(name = "friend") {
+  console.log(`Hello~ ${name}`);
+}
+sayHello();
+sayHello("mike");
 
-// function sum(num1, num2) {
-//   return num1 + num2;
-// }
-// console.log(sum(10, 20));
+function sum(num1, num2) {
+  return num1 + num2;
+}
+console.log(sum(10, 20));
 
-// function square(num) {
-//   return num ** 2;
-// }
-// console.log(square(37));
+function square(num) {
+  return num ** 2;
+}
+console.log(square(37));
 
 //실습
 function triangle(len, height) {

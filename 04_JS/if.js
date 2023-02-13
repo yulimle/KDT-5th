@@ -77,13 +77,13 @@ if (isOld) {
 // }
 
 const 이효석 = {
-  성인인가: true,
-  VIP: false,
-  취했는가: true,
+  성인인가: false,
+  VIP: true,
+  취했는가: false,
   돈: false,
 };
 
-if (이효석.돈 || (이효석.취했는가 && (이효석.성인인가 || 이효석.VIP))) {
+if (이효석.돈 || (!이효석.취했는가 && (이효석.성인인가 || 이효석.VIP))) {
   console.log("통과");
 } else {
   console.log("돌아가");
