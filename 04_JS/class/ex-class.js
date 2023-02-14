@@ -42,4 +42,4 @@ class Circle extends Shape {
 const rec = new Rectangle(10, 10);
 const tri = new Triangle(10, 10);
 const cir = new Rectangle(10);
-console.log(rec);
+rec.getArea();

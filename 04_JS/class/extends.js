@@ -30,4 +30,5 @@ tesla.showSpec();
 // tesla.showFuel();
 
 console.log(hyundai instanceof Car);
-console.log(tesla instanceof Car);
+console.log(tesla instanceof Car);//상속을 받아도 부모요소를 기억하고 있음!
+
