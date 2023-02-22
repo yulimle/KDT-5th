@@ -52,6 +52,7 @@ const resultReduce = numbers4.reduce(
     } else {
       acc[1] += 1;
     }
+    return acc;
   },
   [0, 0]
 );

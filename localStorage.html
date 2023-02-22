@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.localStorage.setItem("name", "이유림");
+      console.log(window.localStorage.getItem("name"));
+
+      window.localStorage.setItem("number", 1);
+      const number = window.localStorage.getItem("name");
+      console.log(number);
+      console.log(typeof number); //모든 데이터를 저장할때 문자열형태로만
+
+      const tetz = {
+        name: "이효석",
+        isOld: true,
+        hobby: ["음주", "콜라", "플스", "자전거"],
+      };
+      //const jsonTetz = JSON.stringify(tetz);
+      //console.log(tetz);
+      //console.log(jsonTetz); //데이터적으로 축약 (문자열로)
+
+      //const objTetz = JSON.parse(jsonTetz); //json 형태로 바꿔줌
+      //console.log(objTetz);
+
+      const jsonTetz = JSON.stringify(tetz);
+      window.localStorage.setItem("tetz", jsonTetz);
+
+      const jsonTetzFromLocal = window.localStorage.getItem("tetz");
+      const objTetz = JSON.parse(jsonTetzFromLocal);
+      console.log(objTetz);
+      console.log(window.localStorage);
+
+      window.localStorage.setItem("pororo", "뽀로로입니다!");
+      console.log(window.localStorage.getItem("pororo"));
+      window.localStorage.removeItem("pororo");
+      console.log(window.localStorage.getItem("pororo"));
+
+      window.localStorage.clear();
+      console.log(window.localStorage);
+
+      window.localStorage.setItem("tetz", "접니다");
+      window.localStorage.setItem("pororo", "뽀로로");
+      console.log(window.localStorage.length);
+      console.log(window.localStorage.key(0));
+      console.log(window.localStorage.key(1));
+      console.log(window.localStorage.key(2)); //null
+
+      window.localStorage.clear();
+      window.localStorage.setItem("tetz", "이효석");
+      window.sessionStorage.setItem("pororo", "뽀로로"); //브라우저 종료되면 데이터 사라짐
+
+      window.localStorage.clear();
+      window.localStorage.setItem("1", "입니다.");
+      window.localStorage.setItem("2", "입니다.");
+      window.localStorage.setItem("3", "입니다.");
+      window.localStorage.setItem("4", "입니다.");
+      window.localStorage.setItem("5", "입니다.");
+      //비동기
+
+      for (let i = 0; i < window.localStorage.length; i += 1) {
+        const key = window.localStorage.key(i);
+        const value = window.localStorage.getItem(key);
+        console.log(key, value);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
